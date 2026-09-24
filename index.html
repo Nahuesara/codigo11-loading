@@ -1,97 +1,132 @@
+<!--My discord: digitalranger | Joint discord server: https://discord.gg/nunBYPBWFF -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>CODIGO 11 - Video Background</title>
-  <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      background: #05070d;
-    }
-
-    #video-wrap {
-      position: fixed;
-      inset: 0;
-      overflow: hidden;
-      background: #05070d;
-    }
-
-    #player {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100vw;
-      height: 56.25vw;
-      min-width: 177.78vh;
-      min-height: 100vh;
-      transform: translate(-50%, -50%) scale(1.03);
-      border: 0;
-    }
-
-    .shade {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.18)),
-        radial-gradient(circle at center, transparent 48%, rgba(0,0,0,.22) 100%);
-    }
-  </style>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--Custom fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!--Custom fonts-->
 </head>
-<body>
-  <div id="video-wrap">
-    <div id="player"></div>
-  </div>
-  <div class="shade"></div>
+<body class="sky noselect">
+    <div class="remote-video-bg" aria-hidden="true">
+        <iframe
+            src="https://www.youtube.com/embed/JA92Akt_rQQ?autoplay=1&mute=1&controls=0&loop=1&playlist=JA92Akt_rQQ&playsinline=1&rel=0&modestbranding=1"
+            title="CODIGO 11 video background"
+            frameborder="0"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+    <div class="remote-video-shade"></div>
+    <div class="local-bg"></div>
+    <div class="local-bg-overlay"></div>
 
-  <script>
-    const VIDEO_ID = 'JA92Akt_rQQ';
+    <div class="discord">
+        <a href="https://discord.gg/nunBYPBWFF" target="_blank" rel="noopener noreferrer" onclick="if(window.invokeNative){window.invokeNative('openUrl','https://discord.gg/nunBYPBWFF')}"><img src="img/Discord.png"></a>
+    </div>
 
-    const tag = document.createElement('script');
-    tag.src = 'https://www.youtube.com/iframe_api';
-    document.head.appendChild(tag);
+    <div class="tiktok">
+        <a href="https://www.youtube.com/@digitalrangertv" target="_blank" rel="noopener noreferrer" onclick="if(window.invokeNative){window.invokeNative('openUrl','https://www.youtube.com/@digitalrangertv')}"><img src="img/Tiktok.png"></a>
+    </div>
 
-    let player;
+    <div class="website">
+        <a href="https://forum.cfx.re/u/digitalranger" target="_blank" rel="noopener noreferrer" onclick="if(window.invokeNative){window.invokeNative('openUrl','https://forum.cfx.re/u/digitalranger')}"><img src="img/Site.png"></a>
+    </div>
 
-    window.onYouTubeIframeAPIReady = function () {
-      player = new YT.Player('player', {
-        videoId: VIDEO_ID,
-        width: '100%',
-        height: '100%',
-        playerVars: {
-          autoplay: 1,
-          mute: 1,
-          controls: 0,
-          disablekb: 1,
-          fs: 0,
-          loop: 1,
-          playlist: VIDEO_ID,
-          playsinline: 1,
-          rel: 0,
-          modestbranding: 1,
-          iv_load_policy: 3,
-          origin: window.location.origin,
-          widget_referrer: window.location.href
-        },
-        events: {
-          onReady: function (event) {
-            event.target.mute();
-            event.target.playVideo();
-          },
-          onStateChange: function (event) {
-            if (event.data === YT.PlayerState.ENDED) {
-              event.target.seekTo(0);
-              event.target.playVideo();
-            }
-          }
-        }
-      });
-    };
-  </script>
+
+    <div id="circleG">
+        <div class="shaded-text">JOINING SERVER</div>
+        <div id="circleG_1" class="circleG"></div>
+        <div id="circleG_2" class="circleG"></div>
+        <div id="circleG_3" class="circleG"></div>
+    </div>
+
+    <div class="scroll-box">
+        <div class="header">
+            <span>STAFF TEAM</span>
+        </div>
+        <div class="person single-person">
+            <img src="img/aslan_profile.png" class="staff-avatar">
+            <span class="menu-text">ASLAN<br>
+               <div class="owner-role">OWNER</div>
+            </span>
+        </div>
+    </div>
+
+    <div class="center-brand">
+        <div class="brand-main">CODIGO <sup>11</sup></div>
+        <div class="brand-sub">ROLEPLAY</div>
+    </div>
+
+    <p class="namePlaceholder" id="namePlaceholder">
+        
+    </p>
+
+    <div class="textbox news-panel">
+        <div class="textboxh">
+            <div class="heading-textbox">NOVEDADES / INFO</div>
+        </div>
+
+        <div class="news-content">
+            <div class="news-item">
+                <div class="news-title">DEPARTAMENTOS MUNICIPALES</div>
+                <p>Si sos inmigrante y recién llegás a la ciudad, podés comenzar con un <span class="blue-text">departamento municipal</span>. Es una opción accesible para tener tu primer hogar y empezar tu historia en CODIGO 11 RP.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">NEGOCIOS Y LOCALES</div>
+                <p>Hay <span class="blue-text">almacenes y distintos tipos de locales</span> disponibles para compra o alquiler. Podés convertirte en empresario, administrar tu propio comercio y hacerlo crecer dentro de la ciudad.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">SISTEMA VIP</div>
+                <p>Contamos con un <span class="blue-text">sistema VIP de pago</span> con beneficios exclusivos para quienes quieran ampliar su experiencia dentro del servidor.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">PROPIEDADES EXCLUSIVAS</div>
+                <p>Además de los departamentos municipales, existen <span class="blue-text">casas y propiedades más exclusivas</span>, ideales para jugadores que buscan un hogar de mayor nivel y más privacidad.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">MAFIAS</div>
+                <p>También contamos con <span class="blue-text">mafias de pago</span> para grupos que quieran desarrollar un rol criminal organizado, con identidad propia y una experiencia más completa.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="textbox2">
+        <div class="textboxh"><div class="heading-textbox">INFORMACIÓN DEL SERVIDOR</div></div>
+        <p>Si necesitás ayuda del staff, utilizá el comando <span class="blue-text">/report</span> y explicá tu problema de forma clara para recibir asistencia más rápido.<br><br>
+        Recordá que en <span class="blue-text">CODIGO 11 RP</span> gran parte de las interacciones del servidor se realizan con la tecla <span class="blue-text">ALT</span>. Usala para interactuar con puntos, NPCs y distintas acciones dentro de la ciudad.</p>
+    </div>
+<div class="volume-panel" aria-label="Control de volumen de la música">
+    <svg class="volume-icon speaker-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+        <path d="M16 9.5c1.2 1.3 1.2 3.7 0 5"></path>
+    </svg>
+    <input id="volumeSlider" class="volume-slider" type="range" min="0" max="100" step="1" value="20" aria-label="Volumen de la música">
+    <svg class="volume-icon music-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 18V7l10-2v11"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="16" cy="16" r="3"></circle>
+    </svg>
+</div>
+
+    <!-- Song that I used is NCS song Akacia - Electric [NCS Release] 
+    original link for song:https://ncs.io/akaciaelectric
+    song is changable in a folder song -->
+    <audio id="loading" src="song/song2.mp3" autoplay="true" hidden="true" loop="true"></audio>
+    <div class="background">
+        <div class="img-center">
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+    
 </body>
 </html>

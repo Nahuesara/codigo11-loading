@@ -1,0 +1,1165 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera, and Firefox */
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: -99;
+}
+
+.menu-container {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin-left: 1%;
+    padding-bottom: 4%;
+}
+
+.textbox {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+    margin-left: 12.25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding-top: 0.10%;
+    padding-bottom: 0.10%;
+    padding-right: 1.5%;
+    padding-left: 1.75%;
+    width: 626px;
+}
+
+.textbox2 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4%;
+  margin-left: 51.33%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding-top: 0.10%;
+  padding-bottom: 0.10%;
+  padding-right: 1.5%;
+  padding-left: 1.75%;
+  width: 626px;
+}
+
+.textbox .heading-textbox::before {
+    position: fixed;
+    content: "";
+    width: 4px;
+    height: 23px;
+    background-color: #0084ff;
+    left: 12.3%;
+    border-radius: 20px;
+    margin-top: 1px;
+}
+
+.textbox2 .heading-textbox::before {
+  position: fixed;
+  content: "";
+  width: 4px;
+  height: 23px;
+  background-color: #0084ff;
+  left: 51.37%;
+  border-radius: 20px;
+  margin-top: 1px;
+}
+
+
+
+
+
+.blue-text {
+    color: #0084ff;
+}
+
+.heading-textbox {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    margin-bottom: -8px;
+    margin-top: 3%;
+    white-space: nowrap
+}
+
+.arrow-up,
+.arrow-down,
+.music-change,
+.space {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.arrow-up img,
+.arrow-down img,
+.music-change img,
+.space img {
+    margin-right: 5px;
+}
+
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-center {
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sky {
+    height: 100%;
+    color: #FFF;
+    display: block;
+}
+
+#circleG {
+    position: absolute;
+    width: auto;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 4%;
+    margin-right: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.6%;
+    border-radius: 30px;
+}
+
+.circleG{   
+	background-color:#0084ff;
+	height:10px;
+	width:10px;
+	animation-name:bounce_circleG;
+	animation-duration:1.5s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	border-radius:9px;
+}
+div#circleG > .circleG:nth-child(even) {
+	margin: 0 7px;
+}
+#circleG_1{
+	animation-delay:0.3s;
+}
+#circleG_2{
+	animation-delay:0.7s;
+}
+#circleG_3{
+	animation-delay:0.9s;
+}
+@keyframes bounce_circleG{
+	0%{
+	}
+	50%{
+		background-color: rgb(255, 255, 255)
+	}
+	100%{
+	}
+}
+
+
+.discord {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.tiktok {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 7.5%;
+    margin-right: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.website {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 11%;
+    margin-right: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.shaded-text {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient-animation 5s infinite;
+    animation-fill-mode: forwards;
+    width: 120px;
+    text-align: center;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    60% {
+      background-position: 100% 50%;
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      background-position: 0% 50%;
+      opacity: 1;
+    }
+  }
+
+  .scroll-box {
+    position: absolute;
+    height: 600px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    margin-top: 4%;
+    margin-left: 1%;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*
+.scroll-box::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 3.5%;
+    padding-right: 4.5%;
+    background-color: #0084ffad;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.person img {
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.person {
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.person .menu-text{
+  text-align: left;
+  padding-right: 5%;
+}
+
+.person:last-child{
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 10px;
+}
+
+.owner-role{
+  color: #0084ff;
+}
+
+.manager-role{
+ color: rgb(30, 75, 255);
+}
+
+.developer-role{
+ color: rgb(149, 47, 245);
+}
+
+.admin-role{
+ color: rgb(240, 3, 248);
+}
+
+.date{
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3%;
+  white-space: nowrap;
+  margin-left: 60%;
+}
+
+
+.textboxh{
+  display: flex;
+  text-align: center;
+
+}
+
+.songname{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0px 30px 30px 0px; 
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.load{
+  position: absolute;
+  right: 0;
+  margin-top: 4.5%;
+  margin-right: 6%;
+  display: flex;
+  overflow: hidden;
+}
+
+.loader{
+  height: 34px;
+  display: flex;
+  align-items: center;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px 0px 0px 30px; 
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  padding-right: 6px;
+  padding-left: 5px;
+}
+
+.loader .stroke {
+  display: block;
+  position: relative;
+  background: #f1f1f1;
+  height: 50%;
+  width: 4px;
+  border-radius: 50px;
+  margin: 0 3px;
+  animation: animate 0.9s linear infinite;
+
+}
+@keyframes animate{
+  50%{
+    height: 10%;
+  }
+  70%{
+    height: 25%;
+  }
+  100%{
+    height: 50%;
+  }
+}
+
+.stroke:nth-child(1){
+  animation-delay: 0s;
+}
+.stroke:nth-child(2){
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+  animation-delay: 0.6s;
+}
+
+
+.slide-right {
+  width: 200px;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.namePlaceholder{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-container { display: none !important; }
+
+.scroll-box {
+    position: absolute;
+    height: auto;
+    width: 260px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    margin-top: 1.2%;
+    margin-left: 1%;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 3.5%;
+    padding-right: 4.5%;
+    background: linear-gradient(90deg, rgba(68,113,255,0.85), rgba(68,113,255,0.45));
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px 12px 0 0;
+}
+
+.person.single-person {
+    min-height: 82px;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 0 0 12px 12px;
+}
+
+.staff-avatar {
+    width: 64px !important;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(61, 140, 255, 0.95);
+}
+
+.person .menu-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.owner-role {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.center-brand {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    pointer-events: none;
+}
+
+.brand-main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 22px rgba(0, 132, 255, 0.35), 0 2px 10px rgba(0,0,0,0.55);
+}
+
+.brand-main sup {
+    font-size: 0.52em;
+    position: relative;
+    top: -0.55em;
+}
+
+.brand-sub {
+    margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.55);
+}
+
+.namePlaceholder, .background.noselect, .img-center, .background .img-center {
+    display: none !important;
+}
+
+.discord { margin-top: 1%; }
+.tiktok { margin-top: 4.7%; }
+.website { margin-top: 8.4%; }
+
+@media (max-width: 1366px) {
+  .brand-main { font-size: 52px; }
+  .brand-sub { font-size: 40px; }
+  .scroll-box { width: 240px; }
+}
+
+
+/* ===== CODIGO 11 RP - FIX RESPONSIVE ===== */
+html, body {
+  background: #070912 !important;
+}
+
+.local-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -100;
+  background:
+    radial-gradient(circle at 68% 38%, rgba(87, 21, 132, .42), transparent 35%),
+    radial-gradient(circle at 34% 58%, rgba(0, 91, 160, .22), transparent 34%),
+    linear-gradient(120deg, #07090f 0%, #10111b 45%, #170b22 100%);
+  overflow: hidden;
+}
+
+.local-bg::before,
+.local-bg::after {
+  content: "";
+  position: absolute;
+  width: 52vw;
+  height: 52vw;
+  border-radius: 50%;
+  filter: blur(95px);
+  opacity: .22;
+}
+.local-bg::before {
+  left: -18vw;
+  bottom: -25vw;
+  background: #005ea8;
+}
+.local-bg::after {
+  right: -20vw;
+  top: -22vw;
+  background: #6d1b89;
+}
+
+.local-bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -99;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.35));
+}
+
+.video-background,
+.video-container,
+iframe {
+  display: none !important;
+}
+
+/* Staff */
+.scroll-box {
+  top: 18px !important;
+  left: 18px !important;
+  margin: 0 !important;
+  width: 215px !important;
+  height: auto !important;
+  border-radius: 10px !important;
+}
+.header {
+  font-size: 15px !important;
+  padding: 8px 10px !important;
+}
+.person.single-person {
+  min-height: 70px !important;
+  padding: 8px 12px !important;
+}
+.staff-avatar {
+  width: 52px !important;
+  height: 52px !important;
+  margin-right: 10px !important;
+}
+.person .menu-text {
+  font-size: 15px !important;
+}
+.owner-role {
+  font-size: 12px !important;
+  margin-top: 4px !important;
+}
+
+/* Central branding */
+.center-brand {
+  top: 35% !important;
+  left: 50% !important;
+  width: auto !important;
+  transform: translate(-50%, -50%) !important;
+  white-space: nowrap;
+}
+.brand-main {
+  font-size: clamp(34px, 4.1vw, 58px) !important;
+  line-height: 1 !important;
+  letter-spacing: 1.5px !important;
+  color: #fff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.65) !important;
+}
+.brand-main sup {
+  font-size: .42em !important;
+  top: -.78em !important;
+  margin: 0 3px 0 2px;
+}
+.brand-sub {
+  margin-top: 10px !important;
+  font-size: clamp(25px, 3vw, 42px) !important;
+  line-height: 1 !important;
+  letter-spacing: 4px !important;
+  color: #fff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.65) !important;
+}
+
+/* Bottom information panels */
+.textbox,
+.textbox2 {
+  box-sizing: border-box !important;
+  position: absolute !important;
+  bottom: 7.5% !important;
+  margin: 0 !important;
+  width: 35.5% !important;
+  min-height: 118px !important;
+  max-height: 145px !important;
+  overflow: hidden !important;
+  padding: 14px 16px !important;
+  border-radius: 16px !important;
+  background: rgba(0, 0, 0, .62) !important;
+  font-size: 10.5px !important;
+  line-height: 1.35 !important;
+}
+.textbox { left: 10.5% !important; }
+.textbox2 { right: 10.5% !important; left: auto !important; }
+
+.textbox p,
+.textbox2 p {
+  margin: 12px 0 0 0 !important;
+  font-size: 10.5px !important;
+  line-height: 1.4 !important;
+}
+.heading-textbox {
+  font-size: 14px !important;
+  margin: 0 !important;
+  line-height: 1.15 !important;
+}
+.date {
+  position: static !important;
+  margin: 1px 0 0 auto !important;
+  font-size: 8px !important;
+  opacity: .8;
+}
+.textboxh {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+}
+.textbox .heading-textbox::before,
+.textbox2 .heading-textbox::before {
+  position: absolute !important;
+  left: 0 !important;
+  top: 14px !important;
+  width: 3px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+
+/* Loader/status: keep away from info panels */
+#circleG {
+  right: 18px !important;
+  bottom: 18px !important;
+  margin: 0 !important;
+  padding: 8px 12px !important;
+}
+.shaded-text {
+  font-size: 10px !important;
+  width: 105px !important;
+}
+.circleG {
+  width: 7px !important;
+  height: 7px !important;
+}
+
+/* Song label */
+.load {
+  top: 18px !important;
+  right: 78px !important;
+  margin: 0 !important;
+  transform: scale(.82);
+  transform-origin: top right;
+}
+
+/* Social buttons */
+.discord,
+.tiktok,
+.website {
+  right: 18px !important;
+  margin-right: 0 !important;
+  height: 42px !important;
+}
+.discord { top: 18px !important; margin-top: 0 !important; }
+.tiktok { top: 68px !important; margin-top: 0 !important; }
+.website { top: 118px !important; margin-top: 0 !important; }
+.discord img,
+.tiktok img,
+.website img {
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: contain;
+}
+
+@media (max-width: 1280px) {
+  .textbox,
+  .textbox2 {
+    width: 38% !important;
+    bottom: 8.5% !important;
+    min-height: 105px !important;
+    max-height: 125px !important;
+    padding: 11px 13px !important;
+  }
+  .textbox { left: 7% !important; }
+  .textbox2 { right: 7% !important; }
+  .textbox p,
+  .textbox2 p {
+    font-size: 9.5px !important;
+    margin-top: 9px !important;
+  }
+  .heading-textbox { font-size: 12px !important; }
+  .center-brand { top: 34% !important; }
+  .scroll-box { width: 205px !important; }
+}
+
+@media (max-width: 1000px) {
+  .textbox,
+  .textbox2 {
+    width: 42% !important;
+  }
+  .textbox { left: 4% !important; }
+  .textbox2 { right: 4% !important; }
+  .scroll-box { transform: scale(.88); transform-origin: top left; }
+}
+\n\n/* ===== CODIGO 11 RP - YOUTUBE 4K BACKGROUND ===== */\nhtml, body {\n  background: #05070d !important;\n}\n\n.local-bg {\n  z-index: -120 !important; /* fallback only */\n}\n\n.yt-bg {\n  position: fixed;\n  inset: 0;\n  overflow: hidden;\n  z-index: -110;\n  background: #05070d;\n  pointer-events: none;\n}\n\n.yt-bg iframe {\n  display: block !important;\n  position: absolute !important;\n  top: 50% !important;\n  left: 50% !important;\n  width: 100vw !important;\n  height: 56.25vw !important;\n  min-width: 177.78vh !important;\n  min-height: 100vh !important;\n  transform: translate(-50%, -50%) scale(1.02) !important;\n  border: 0 !important;\n  pointer-events: none !important;\n  filter: saturate(1.05) contrast(1.04) brightness(.92);\n}\n\n.yt-bg-shade {\n  position: fixed;\n  inset: 0;\n  z-index: -100;\n  pointer-events: none;\n  background:\n    linear-gradient(180deg, rgba(0,0,0,.14), rgba(0,0,0,.28)),\n    radial-gradient(circle at center, transparent 42%, rgba(0,0,0,.28) 100%);\n}\n
+
+/* ===== CODIGO 11 RP - SLIDER DE VOLUMEN ===== */
+.load { display: none !important; }
+
+.volume-panel {
+  position: absolute;
+  top: 18px;
+  right: 78px;
+  z-index: 30;
+  width: 170px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 16px rgba(0,0,0,.30);
+}
+
+.volume-icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  fill: none;
+  stroke: rgba(255,255,255,.72);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.speaker-icon path:first-child {
+  fill: rgba(255,255,255,.72);
+  stroke: none;
+}
+
+.volume-slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 105px;
+  height: 3px;
+  border-radius: 99px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #0084ff 0%, #0084ff 20%, rgba(255,255,255,.14) 20%, rgba(255,255,255,.14) 100%);
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 99px;
+  background: transparent;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #07111f;
+  border: 2px solid #0084ff;
+  box-shadow: 0 0 7px rgba(0,132,255,.55);
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-track {
+  height: 3px;
+  border: 0;
+  border-radius: 99px;
+  background: rgba(255,255,255,.14);
+}
+
+.volume-slider::-moz-range-progress {
+  height: 3px;
+  border-radius: 99px;
+  background: #0084ff;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #07111f;
+  border: 2px solid #0084ff;
+  box-shadow: 0 0 7px rgba(0,132,255,.55);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .volume-panel {
+    right: 68px;
+    width: 155px;
+    transform: scale(.92);
+    transform-origin: top right;
+  }
+  .volume-slider { width: 92px; }
+}
+
+
+/* ===== CODIGO 11 RP - NOVEDADES LATERALES CON SCROLL ===== */
+.textbox.news-panel {
+  position: absolute !important;
+  left: 2.8% !important;
+  right: auto !important;
+  top: 31% !important;
+  bottom: 7% !important;
+  width: 24.5% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 14px 12px 14px 16px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  pointer-events: auto !important;
+  user-select: text;
+  background: rgba(0, 0, 0, .62) !important;
+  border-radius: 14px !important;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,132,255,.8) rgba(255,255,255,.07);
+}
+
+.textbox.news-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textbox.news-panel::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.06);
+  border-radius: 999px;
+}
+
+.textbox.news-panel::-webkit-scrollbar-thumb {
+  background: rgba(0,132,255,.82);
+  border-radius: 999px;
+}
+
+.textbox.news-panel .textboxh {
+  position: sticky;
+  top: -14px;
+  z-index: 3;
+  margin: -14px -12px 8px -16px !important;
+  padding: 13px 12px 10px 16px;
+  background: transparent;
+  border-bottom: 0;
+}
+
+.textbox.news-panel .heading-textbox {
+  font-size: 13px !important;
+  letter-spacing: .2px;
+}
+
+.textbox.news-panel .date {
+  font-size: 7.5px !important;
+  margin-left: auto !important;
+  align-self: center;
+}
+
+.textbox.news-panel .heading-textbox::before {
+  top: 12px !important;
+  height: 17px !important;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.news-item {
+  padding: 9px 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.045);
+}
+
+.news-title {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  letter-spacing: .15px;
+}
+
+.textbox.news-panel .news-item p {
+  margin: 0 !important;
+  font-size: 9.3px !important;
+  line-height: 1.45 !important;
+  color: rgba(255,255,255,.92);
+}
+
+@media (max-width: 1280px) {
+  .textbox.news-panel {
+    left: 2.4% !important;
+    top: 30% !important;
+    bottom: 6.5% !important;
+    width: 25.5% !important;
+    padding: 11px 10px 12px 13px !important;
+  }
+  .textbox.news-panel .textboxh {
+    top: -11px;
+    margin: -11px -10px 7px -13px !important;
+    padding: 10px 10px 8px 13px;
+  }
+  .textbox.news-panel .heading-textbox { font-size: 11.5px !important; }
+  .news-title { font-size: 9.5px; }
+  .textbox.news-panel .news-item p { font-size: 8.5px !important; }
+}
+
+@media (max-width: 1000px) {
+  .textbox.news-panel {
+    left: 2.2% !important;
+    width: 26.2% !important;
+  }
+}
+
+
+/* Ajuste solicitado: cabecera limpia como Información del servidor */
+.textbox.news-panel .date {
+  display: none !important;
+}
+
+.textbox.news-panel .textboxh {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ===== CODIGO 11 - REMOTE VIDEO ONLY VIA GITHUB PAGES ===== */
+html, body {
+  background: #05070d !important;
+}
+
+.remote-video-bg {
+  position: fixed !important;
+  inset: 0 !important;
+  overflow: hidden !important;
+  z-index: -120 !important;
+  background: #05070d !important;
+  pointer-events: none !important;
+}
+
+.remote-video-bg iframe {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+.remote-video-shade {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -110 !important;
+  pointer-events: none !important;
+  background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.16)) !important;
+}
+
+/* old local/direct YouTube layers are only fallback and must not cover the remote background */
+.yt-bg, .yt-bg-shade {
+  display: none !important;
+}
+
+.local-bg {
+  z-index: -140 !important;
+}
+.local-bg-overlay {
+  z-index: -130 !important;
+}
+
+
+/* ===== FIX FINAL: VIDEO REMOTO VISIBLE EN FIVEM ===== */
+html, body {
+  background: transparent !important;
+}
+
+.remote-video-bg {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  z-index: 0 !important;
+  background: #05070d !important;
+  pointer-events: none !important;
+}
+
+.remote-video-bg iframe {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100vw !important;
+  height: 56.25vw !important;
+  min-width: 177.78vh !important;
+  min-height: 100vh !important;
+  transform: translate(-50%, -50%) !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+.remote-video-shade {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background: rgba(0,0,0,.18) !important;
+}
+
+/* El fondo local no debe tapar el video remoto */
+.local-bg,
+.local-bg-overlay,
+.background,
+.img-center {
+  background: transparent !important;
+}
+
+/* Toda la interfaz por encima del video */
+.discord,
+.tiktok,
+.website,
+#circleG,
+.scroll-box,
+.center-brand,
+.textbox,
+.textbox2,
+.volume-panel,
+.namePlaceholder {
+  z-index: 20 !important;
+}
+
+/* Evita que capas antiguas tapen el fondo */
+.yt-bg,
+.yt-bg-shade,
+.video-background,
+.video-container {
+  display: none !important;
+}

@@ -1163,3 +1163,57 @@ html, body {
 .video-container {
   display: none !important;
 }
+
+
+/* ===== FIX FINAL GITHUB: YOUTUBE IFRAME API (mismo metodo que ya funciono) ===== */
+html, body {
+  background: #05070d !important;
+}
+
+#video-wrap {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  z-index: 0 !important;
+  background: #05070d !important;
+  pointer-events: none !important;
+}
+
+#player {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100vw !important;
+  height: 56.25vw !important;
+  min-width: 177.78vh !important;
+  min-height: 100vh !important;
+  transform: translate(-50%, -50%) scale(1.03) !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+#player iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+.remote-video-bg { display: none !important; }
+.remote-video-shade { z-index: 1 !important; }
+
+.discord,
+.tiktok,
+.website,
+#circleG,
+.scroll-box,
+.center-brand,
+.textbox,
+.textbox2,
+.volume-panel,
+.namePlaceholder {
+  position: absolute;
+  z-index: 20 !important;
+}

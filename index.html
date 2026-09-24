@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>CODIGO 11 - Video Background</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #05070d;
+    }
+
+    #video-wrap {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      background: #05070d;
+    }
+
+    #player {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 56.25vw;
+      min-width: 177.78vh;
+      min-height: 100vh;
+      transform: translate(-50%, -50%) scale(1.03);
+      border: 0;
+    }
+
+    .shade {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.18)),
+        radial-gradient(circle at center, transparent 48%, rgba(0,0,0,.22) 100%);
+    }
+  </style>
+</head>
+<body>
+  <div id="video-wrap">
+    <div id="player"></div>
+  </div>
+  <div class="shade"></div>
+
+  <script>
+    const VIDEO_ID = 'JA92Akt_rQQ';
+
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    let player;
+
+    window.onYouTubeIframeAPIReady = function () {
+      player = new YT.Player('player', {
+        videoId: VIDEO_ID,
+        width: '100%',
+        height: '100%',
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          loop: 1,
+          playlist: VIDEO_ID,
+          playsinline: 1,
+          rel: 0,
+          modestbranding: 1,
+          iv_load_policy: 3,
+          origin: window.location.origin,
+          widget_referrer: window.location.href
+        },
+        events: {
+          onReady: function (event) {
+            event.target.mute();
+            event.target.playVideo();
+          },
+          onStateChange: function (event) {
+            if (event.data === YT.PlayerState.ENDED) {
+              event.target.seekTo(0);
+              event.target.playVideo();
+            }
+          }
+        }
+      });
+    };
+  </script>
+</body>
+</html>
